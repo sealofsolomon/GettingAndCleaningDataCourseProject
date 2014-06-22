@@ -1,6 +1,6 @@
 Getting and Cleaning Data Course Project - CodeBook
 ===================================================
-The CodeBook describes the variables, the data, and any transformations or work that was performed to clean up the original UCI HAR Dataset
+This CodeBook describes the variables, the data, and any transformations or work that was performed to clean up the original UCI HAR Dataset
 
 Original UCI HAR Dataset Overview
 ---------------------------------
@@ -18,6 +18,10 @@ For each record it is provided:
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
+
+Notes: 
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
 
 ### Feature Selection
 
