@@ -19,13 +19,13 @@ The run_analysis.R script assumes that the UCI HAR Dataset is already extracted 
 
 * Determines which features are means and standard deviations by first loading in the "features.txt" file and then using the grepl function to pattern match the features containing "mean" or "std" and saving their indexes
 
-* Normalise the feature names by removing function brackets and converting to lower-case and saving the results to featureNames
+* Uses the indexes to normalise the feature names by removing function brackets and converting to lower-case and saving the results to featureNames
 
 * Reads only the relevant variables from test and train datasets by:
 
-** First creating a numeric vector of null objects the same length as the relevant features and saving the results to columnClasses
+  * First creating a numeric vector of null objects the same length as the relevant features and saving the results to columnClasses
 
-** Then using the defined readDataset function to read in the "test" and "train" datasets in table format, using specified column names and classes as defined in featureNames and columnClasses
+  * Then using the defined readDataset function to read in the "test" and "train" datasets in table format, using specified column names and classes as defined in featureNames and columnClasses
 
 * Merges the test and train datasets
 
