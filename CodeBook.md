@@ -30,51 +30,55 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
+tBodyAcc-XYZ<br />
+tGravityAcc-XYZ<br />
+tBodyAccJerk-XYZ<br />
+tBodyGyro-XYZ<br />
+tBodyGyroJerk-XYZ<br />
+tBodyAccMag<br />
+tGravityAccMag<br />
+tBodyAccJerkMag<br />
+tBodyGyroMag<br />
+tBodyGyroJerkMag<br />
+fBodyAcc-XYZ<br />
+fBodyAccJerk-XYZ<br />
+fBodyGyro-XYZ<br />
+fBodyAccMag<br />
+fBodyAccJerkMag<br />
+fBodyGyroMag<br />
 fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+mean(): Mean value<br />
+std(): Standard deviation<br />
+mad(): Median absolute deviation <br />
+max(): Largest value in array<br />
+min(): Smallest value in array<br />
+sma(): Signal magnitude area<br />
+energy(): Energy measure. Sum of the squares divided by the number of values. <br />
+iqr(): Interquartile range <br />
+entropy(): Signal entropy<br />
+arCoeff(): Autorregresion coefficients with Burg order equal to 4<br />
+correlation(): correlation coefficient between two signals<br />
+maxInds(): index of the frequency component with largest magnitude<br />
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency<br />
+skewness(): skewness of the frequency domain signal <br />
+kurtosis(): kurtosis of the frequency domain signal <br />
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.<br />
 angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
+gravityMean<br />
+tBodyAccMean<br />
+tBodyAccJerkMean<br />
+tBodyGyroMean<br />
 tBodyGyroJerkMean
+
+### Source and further information
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Transformations and work performed to clean up the original UCI HAR Dataset into a new tidy dataset
 ---------------------------------------------------------------------------------------------------
@@ -112,84 +116,84 @@ The run_analysis.R script assumes that the original UCI HAR Dataset is already e
 * Outputs the new tidy dataset to the working directory in a file called "tidyHARdataset.txt"
 
 Resulting set of variables for the new tidy dataset
---------------------------------------------------
+---------------------------------------------------
 
 ### Features
 
-subject
-activity
-tbodyacc-mean-x
-tbodyacc-mean-y
-tbodyacc-mean-z
-tbodyacc-std-x
-tbodyacc-std-y
-tbodyacc-std-z
-tgravityacc-mean-x
-tgravityacc-mean-y
-tgravityacc-mean-z
-tgravityacc-std-x
-tgravityacc-std-y
-tgravityacc-std-z
-tbodyaccjerk-mean-x
-tbodyaccjerk-mean-y
-tbodyaccjerk-mean-z
-tbodyaccjerk-std-x
-tbodyaccjerk-std-y
-tbodyaccjerk-std-z
-tbodygyro-mean-x
-tbodygyro-mean-y
-tbodygyro-mean-z
-tbodygyro-std-x
-tbodygyro-std-y
-tbodygyro-std-z
-tbodygyrojerk-mean-x
-tbodygyrojerk-mean-y
-tbodygyrojerk-mean-z
-tbodygyrojerk-std-x
-tbodygyrojerk-std-y
-tbodygyrojerk-std-z
-tbodyaccmag-mean
-tbodyaccmag-std
-tgravityaccmag-mean
-tgravityaccmag-std
-tbodyaccjerkmag-mean
-tbodyaccjerkmag-std
-tbodygyromag-mean
-tbodygyromag-std
-tbodygyrojerkmag-mean
-tbodygyrojerkmag-std
-fbodyacc-mean-x
-fbodyacc-mean-y
-fbodyacc-mean-z
-fbodyacc-std-x
-fbodyacc-std-y
-fbodyacc-std-z
-fbodyaccjerk-mean-x
-fbodyaccjerk-mean-y
-fbodyaccjerk-mean-z
-fbodyaccjerk-std-x
-fbodyaccjerk-std-y
-fbodyaccjerk-std-z
-fbodygyro-mean-x
-fbodygyro-mean-y
-fbodygyro-mean-z
-fbodygyro-std-x
-fbodygyro-std-y
-fbodygyro-std-z
-fbodyaccmag-mean
-fbodyaccmag-std
-fbodybodyaccjerkmag-mean
-fbodybodyaccjerkmag-std
-fbodybodygyromag-mean
-fbodybodygyromag-std
-fbodybodygyrojerkmag-mean
+subject<br />
+activity<br />
+tbodyacc-mean-x<br />
+tbodyacc-mean-y<br />
+tbodyacc-mean-z<br />
+tbodyacc-std-x<br />
+tbodyacc-std-y<br />
+tbodyacc-std-z<br />
+tgravityacc-mean-x<br />
+tgravityacc-mean-y<br />
+tgravityacc-mean-z<br />
+tgravityacc-std-x<br />
+tgravityacc-std-y<br />
+tgravityacc-std-z<br />
+tbodyaccjerk-mean-x<br />
+tbodyaccjerk-mean-y<br />
+tbodyaccjerk-mean-z<br />
+tbodyaccjerk-std-x<br />
+tbodyaccjerk-std-y<br />
+tbodyaccjerk-std-z<br />
+tbodygyro-mean-x<br />
+tbodygyro-mean-y<br />
+tbodygyro-mean-z<br />
+tbodygyro-std-x<br />
+tbodygyro-std-y<br />
+tbodygyro-std-z<br />
+tbodygyrojerk-mean-x<br />
+tbodygyrojerk-mean-y<br />
+tbodygyrojerk-mean-z<br />
+tbodygyrojerk-std-x<br />
+tbodygyrojerk-std-y<br />
+tbodygyrojerk-std-z<br />
+tbodyaccmag-mean<br />
+tbodyaccmag-std<br />
+tgravityaccmag-mean<br />
+tgravityaccmag-std<br />
+tbodyaccjerkmag-mean<br />
+tbodyaccjerkmag-std<br />
+tbodygyromag-mean<br />
+tbodygyromag-std<br />
+tbodygyrojerkmag-mean<br />
+tbodygyrojerkmag-std<br />
+fbodyacc-mean-x<br />
+fbodyacc-mean-y<br />
+fbodyacc-mean-z<br />
+fbodyacc-std-x<br />
+fbodyacc-std-y<br />
+fbodyacc-std-z<br />
+fbodyaccjerk-mean-x<br />
+fbodyaccjerk-mean-y<br />
+fbodyaccjerk-mean-z<br />
+fbodyaccjerk-std-x<br />
+fbodyaccjerk-std-y<br />
+fbodyaccjerk-std-z<br />
+fbodygyro-mean-x<br />
+fbodygyro-mean-y<br />
+fbodygyro-mean-z<br />
+fbodygyro-std-x<br />
+fbodygyro-std-y<br />
+fbodygyro-std-z<br />
+fbodyaccmag-mean<br />
+fbodyaccmag-std<br />
+fbodybodyaccjerkmag-mean<br />
+fbodybodyaccjerkmag-std<br />
+fbodybodygyromag-mean<br />
+fbodybodygyromag-std<br />
+fbodybodygyrojerkmag-mean<br />
 fbodybodygyrojerkmag-std
 
 ### Activities
 
-WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-STANDING
+WALKING<br />
+WALKING_UPSTAIRS<br />
+WALKING_DOWNSTAIRS<br />
+SITTING<br />
+STANDING<br />
 LAYING
