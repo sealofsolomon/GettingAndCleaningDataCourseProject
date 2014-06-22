@@ -89,11 +89,11 @@ Transformations and work performed to clean up the original UCI HAR Dataset into
 
 The script called run_analysis.R was used to do the following transformations:
 
-1. Merge the training and the test sets from the UCI HAR Dataset to create one data set.
-2. Extract only the measurements on the mean and standard deviation for each measurement. 
+1. Merge the training and the test sets from the UCI HAR Dataset to create one data set
+2. Extract only the measurements on the mean and standard deviation for each measurement
 3. Use descriptive activity names to name the activities in the data set
-4. Appropriately label the data set with descriptive variable names. 
-5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
+4. Appropriately label the data set with descriptive variable names
+5. Create a second, independent tidy data set with the average of each variable for each activity and each subject
 
 The run_analysis.R script assumes that the original UCI HAR Dataset is already extracted to your working directory and works like this:
 
@@ -197,9 +197,9 @@ fbodybodygyrojerkmag-std
 
 ### Activities
 
-WALKING<br />
-WALKING_UPSTAIRS<br />
-WALKING_DOWNSTAIRS<br />
+LAYING<br />
 SITTING<br />
 STANDING<br />
-LAYING
+WALKING<br />
+WALKING_DOWNSTAIRS<br />
+WALKING_UPSTAIRS

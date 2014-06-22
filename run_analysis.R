@@ -5,11 +5,11 @@
 ## 1) Imports the Human Activity Recognition Using Smartphones Dataset.
 ## 2) Merges the training and the test sets to create one data set.
 ## 3) Extracts only the measurements on the mean and standard deviation for each
-## measurement.
+##    measurement.
 ## 4) Uses descriptive activity names to name the activities in the data set.
 ## 5) Appropriately labels the data set with descriptive variable names.
 ## 6) Creates a second, independent tidy data set with the average of each 
-## variable for each activity and each subject.
+##    variable for each activity and each subject.
 ##
 ## Script assumes that the UCI HAR Dataset is already extracted to your
 ## working directory
