@@ -75,5 +75,11 @@ dataTable[, activity := as.factor(activityName[activity,]$V2) ]
 ## into a new tidy dataset
 tidyDataset <- dataTable[,lapply(.SD,mean), by=list(subject, activity)]
 
+## Sort the tidy dataset by subject and activity
+tidyDataset <- as.data.frame(tidyDataset)
+tidyDataset[,1] <- as.numeric(as.character(tidyDataset[,1]))
+tidyDataset[,2] <- as.character(tidyDataset[,2])
+tidyDataset <- tidyDataset[order(tidyDataset[,1], tidyDataset[,2]), ]
+
 ## Output the new tidy dataset to the working directory
 write.table(tidyDataset, "tidyHARdataset.txt", row.names=FALSE)

@@ -117,6 +117,8 @@ The run_analysis.R script assumes that the original UCI HAR Dataset is already e
 
 * Computes the average of each variable for each activity and each subject into a new tidy dataset using the lapply and mean functions
 
+* Sorts the tidy dataset by subject and activity
+
 * Outputs the new tidy dataset to the working directory in a file called "tidyHARdataset.txt"
 
 Resulting set of variables for the new tidy dataset
